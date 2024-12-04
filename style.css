@@ -1,0 +1,110 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDlP-p8EMALpJWI4s0xp4z2MpaaeVMLXhDTw&s);
+}
+#bmi-arrow{
+    transition: transform 0.5s ease;
+}
+.container{
+    position: absolute;
+    left: 34%;
+    top: 5%;
+    box-shadow: 0px 0px 0px rgb(93, 1, 93);
+    border: 1px solid rgb(93, 1, 93);
+}
+.box{
+    width: 500px;
+    height: 630px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 255);
+    text-align: center;
+}
+.box::before{
+    content: '';
+    position: absolute;
+    height: 110%;
+    width: 110%;
+    left: -5%;
+    top: -5%;
+    bottom: -3%;
+    background-color: rgba(18, 19, 19, 0.3);
+    box-shadow: 0px 0px 166px -31px black rgba(0, 0, 0, 0.15);
+    border-radius: 60px;
+    z-index: -1;
+}
+.content{
+    display: flex;
+}
+h1{
+    font-weight: bold;
+    font-size: 36px;
+    padding: 30px 25px;
+    color: purple;
+}
+.input{
+    background: #ffff;
+    box-shadow: 0px 0px 95px -30px black rgba(0, 0, 0, 0.15);
+    border-radius: 28px;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+.input label{
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 20px;
+}
+.input input{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid purple;
+    width: 60%;
+    text-align: center;
+    font-size: 28px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#calculate{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    background-color: purple;
+    font-size: 16px;
+    border-radius: 12px;
+    padding: 12px 0;
+    width: 90%;
+    outline: none;
+    border: none;
+    transition:background .2s ease;
+}
+#calculate:hover{
+    background-color: plum;
+    box-shadow: 0px 0px 20px black;
+    border: 2px solid black;
+}
+.result{
+    padding: 30px 20px;
+}
+.result p{
+    font-weight: 600;
+    font-size: 22px;
+    color: #000;
+}
+.result #result{
+    font-size: 36px;
+    font-weight: 900;
+    color: purple;
+    background-color: #fff;
+    display: inline-block;
+    padding: 7px 20px;
+    border-radius: 55px;
+    margin-bottom: 25px;
+}
+#comment{
+    color: purple;
+    font-weight: 800;
+}
